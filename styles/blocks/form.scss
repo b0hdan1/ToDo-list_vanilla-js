@@ -1,0 +1,53 @@
+.title {
+  margin: 15px;
+  text-align: center;
+}
+
+.form {
+  margin: auto;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.89);
+}
+
+.new-todo__header-title {
+  text-align: center;
+  margin: 15px;
+}
+
+.new-todo__notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  margin: 10px 0 15px 0;
+  box-sizing: border-box;
+  height: 52px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  &:hover {
+    border: 5px solid rgba(43, 99, 136, 0.89);
+  }
+}
+
+.container_current-button {
+  text-align: center;
+}
+
+.new-todo__button {
+  height: 40px;
+  width: 50%;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(30, 138, 18, 0.89);
+  margin-bottom: 15px;
+}

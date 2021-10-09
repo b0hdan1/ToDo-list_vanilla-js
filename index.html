@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <h1 class="title">Todos</h1>
+
+    <form action="/" method="get" class="form">
+      <h2 class="new-todo__header-title">Create new toDo</h2>
+      <div class="new-todo__notes">
+        <input
+          class="input input-title"
+          name="title"
+          type="text"
+          placeholder="Enter toDo title"
+        >
+        <input
+          class="input input-content"
+          name="content"
+          type="text"
+          placeholder="Enter toDo content"
+        >
+        <select class="input input-categorie" name="categorie">
+          <option>Choose category</option>
+          <option>Task</option>
+          <option>Random Thought</option>
+          <option>Idea</option>
+          <option>Quote</option>
+        </select>
+      </div>
+
+      <div class="container_current-button">
+        <button
+          type="submit"
+          class="new-todo__button"
+        >
+            Create note
+        </button>
+      </div>
+    </form>
+
+    <table class="table current-table">
+      <thead>
+        <tr class="current_table-row table-row">
+          <th class="curernt_head-todo">Title</th>
+          <th class="curernt_head-todo">Created</th>
+          <th class="curernt_head-todo">Category</th>
+          <th class="curernt_head-todo">Content</th>
+          <th class="curernt_head-todo">Dates</th>
+          <th class="curernt_head-todo">Edit</th>
+          <th class="curernt_head-todo">Archived</th>
+          <th class="curernt_head-todo">Delete</th>
+        </tr>
+      </thead>
+      <tbody class="current-tbody"></tbody>
+    </table>
+    <table class="table archive-table">
+      <thead>
+        <tr class="archive_table-row table-row">
+          <th class="archive_head-todo">Title</th>
+          <th class="archive_head-todo">Created</th>
+          <th class="archive_head-todo">Category</th>
+          <th class="archive_head-todo">Content</th>
+          <th class="archive_head-todo">Dates</th>
+          <th class="archive_head-todo">Edit</th>
+          <th class="archive_head-todo">Unarchive</th>
+          <th class="archive_head-todo">Delete</th>
+        </tr>
+      </thead>
+      <tbody class="archive-tbody"></tbody>
+    </table>
+
+    <script src="/src/scripts/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/c9a3dad176.js" crossorigin="anonymous"></script>
+  </body>
+</html>
