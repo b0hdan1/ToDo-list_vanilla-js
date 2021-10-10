@@ -2,12 +2,11 @@
 import { todos } from "./data.js";
 import { archive } from "./archiveData.js";
 import { archiveTable } from "./archivator.js";
+import { counterNotesActive, counterNotesArchive } from "./counterNotes.js";
 
 export const currentTable = document.querySelector('.current-tbody');
 const form = document.querySelector('form');
 const div = document.createElement('div');
-
-console.log(currentTable);
 
 const addZeroToDay = (day) => {
   return (day < 10) ? '0' + day : day;
