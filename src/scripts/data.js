@@ -5,7 +5,6 @@ export const todos = [
     category: 'Task',
     content: 'Tomatoes, bread',
     dates: '',
-    active: true,
   },
   {
     title: 'Hard skills',
@@ -13,7 +12,6 @@ export const todos = [
     category: 'Idea',
     content: 'Learn Angular',
     dates: '',
-    active: true,
   },
   {
     title: 'Chenge the world',
@@ -21,7 +19,6 @@ export const todos = [
     category: 'Random Thought',
     content: 'Сreate an application that will change the world',
     dates: '02.01.2022',
-    active: true,
   },
   {
     title: 'Siddhartha Gautama',
@@ -29,6 +26,5 @@ export const todos = [
     category: 'Quote',
     content: 'Defeat yourself and win thousands of battles',
     dates: '',
-    active: true,
   },
 ]

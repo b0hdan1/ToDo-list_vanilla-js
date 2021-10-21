@@ -2,7 +2,6 @@
 import { todos } from "./data.js";
 import { archive } from "./archiveData.js";
 import { archiveTable } from "./archivator.js";
-import { counterNotesActive, counterNotesArchive } from "./counterNotes.js";
 
 export const currentTable = document.querySelector('.current-tbody');
 const form = document.querySelector('form');
@@ -17,7 +16,7 @@ const createDate = () => {
   const month = new Date().toLocaleString('en', {month: 'long'});
   const day = addZeroToDay(new Date().getDate());
 
-  return `${month} ${day},${year}`;
+  return `${month} ${day}.${year}`;
 };
 
 function createNotification(title, description, type, color) {
@@ -66,20 +65,20 @@ function isValid() {
   };
 }
 
-export function addIcon(categorie) {
-  if (categorie === 'Task') {
+export function addIcon(category) {
+  if (category === 'Task') {
     return `<i class="fa fa-shopping-cart" aria-hidden="true"></i>`;
   }
 
-  if (categorie === 'Random Thought') {
+  if (category === 'Random Thought') {
     return `<i class="fas fa-head-side-virus"></i>`;
   }
 
-  if (categorie === 'Idea') {
+  if (category === 'Idea') {
     return `<i class="fa fa-lightbulb-o" aria-hidden="true"></i>`;
   }
 
-  if (categorie === 'Quote') {
+  if (category === 'Quote') {
     return `<i class="fa fa-quote-right" aria-hidden="true"></i>`;
   }
 }
@@ -186,3 +185,5 @@ currentTable.addEventListener('click', (e) => {
 
   e.target.closest('.todo-item').remove();
 });
+
+

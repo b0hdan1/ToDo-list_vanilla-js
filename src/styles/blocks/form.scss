@@ -1,14 +1,13 @@
 .form {
-  margin: auto;
-  width: 70%;
+  margin: 10px auto;
+  width: 40%;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: rgba(192, 192, 192, 0.89);
+  background-color: rgba(174, 223, 189, 0.39);
 }
 
 .new-todo__header-title {
   text-align: center;
-  margin: 15px;
 }
 
 .new-todo__notes {
@@ -21,7 +20,7 @@
   margin: 10px 0 15px 0;
   box-sizing: border-box;
   height: 52px;
-  width: 100%;
+  width: 50%;
   text-align: center;
   font-weight: bold;
   font-size: 100%;
